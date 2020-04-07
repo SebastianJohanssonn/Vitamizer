@@ -1,0 +1,29 @@
+[
+    {
+        "id": "1",
+        "name": "D-vitamin",
+        "info": "D-vitamin reglerar kalkbalansen i skelett och tänder. Brist på D-vitamin kan orsaka rakit, 'engelska sjukan', hos barn, vilket visar sig som mjukt och missformat skelett, och benuppmjukning, osteomalaci, hos vuxna. D-vitamin är ett av de få vitaminer vi riskerar att få för lite av och vissa grupper kan därför behöva tillskott.",
+        "sources": [
+            "Via mat.",
+            "Bildas i huden när vi är ute i solen."
+        ]
+    },
+    {
+        "id": "2",
+        "name": "C-vitamin",
+        "info": "C-vitamin fungerar som antioxidant och behövs bland annat för att bygga upp kroppens brosk- och benvävnad. Det underlättar även upptaget av järn från maten.",
+        "sources": [
+            "Citrusfrukter.",
+            "Grönsaker."
+        ]
+    },
+    {
+        "id": "3",
+        "name": "D-vitamin",
+        "info": "A-vitamin behövs för att syn, hud och slemhinnor ska fungera normalt. A-vitamin har en grundläggande betydelse för utveckling, tillväxt och differentiering av embryot under den tidigaste delen av graviditeten, för att fostret ska utvecklas normalt och få en fullgod syn.",
+        "sources": [
+            "Preformerat A-vitamin (retinol och retinylestrar) som finns i animaliska livsmedel.",
+            "Provitamin A i form av karotenoider som i huvudsak är växtbaserade och där betakaroten är den vanligaste karotenoiden."
+        ]
+    }
+]
