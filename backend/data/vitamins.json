@@ -1,26 +1,29 @@
 [
     {
-        "id": "1",
+        "id": 1,
         "name": "D-vitamin",
-        "info": "D-vitamin reglerar kalkbalansen i skelett och tänder. Brist på D-vitamin kan orsaka rakit, 'engelska sjukan', hos barn, vilket visar sig som mjukt och missformat skelett, och benuppmjukning, osteomalaci, hos vuxna. D-vitamin är ett av de få vitaminer vi riskerar att få för lite av och vissa grupper kan därför behöva tillskott.",
+        "summary": "D-vitamin reglerar kalkbalansen i skelett och tänder.",
+        "info": "Brist på D-vitamin kan orsaka rakit, 'engelska sjukan', hos barn, vilket visar sig som mjukt och missformat skelett, och benuppmjukning, osteomalaci, hos vuxna. D-vitamin är ett av de få vitaminer vi riskerar att få för lite av och vissa grupper kan därför behöva tillskott.",
         "sources": [
             "Via mat.",
             "Bildas i huden när vi är ute i solen."
         ]
     },
     {
-        "id": "2",
+        "id": 2,
         "name": "C-vitamin",
-        "info": "C-vitamin fungerar som antioxidant och behövs bland annat för att bygga upp kroppens brosk- och benvävnad. Det underlättar även upptaget av järn från maten.",
+        "summary": "C-vitamin fungerar som antioxidant och behövs bland annat för att bygga upp kroppens brosk- och benvävnad. ",
+        "info": "Det underlättar även upptaget av järn från maten. C-vitamin är värmekänsligt. Om mat hålls varm länge eller värms upp upprepade gånger minskar mängden C-vitamin i maten. Generellt gäller att näringsinnehållet påverkas minst av tillagning med lite vätska, vid låg temperatur och under kort tid. Därför är ångkokning och uppvärmning i mikrovågsugn mer skonsamma sätt för att upphetta livsmedel, jämfört med kokning, stekning eller wokning",
         "sources": [
             "Citrusfrukter.",
             "Grönsaker."
         ]
     },
     {
-        "id": "3",
+        "id": 3,
         "name": "A-vitamin",
-        "info": "A-vitamin behövs för att syn, hud och slemhinnor ska fungera normalt. A-vitamin har en grundläggande betydelse för utveckling, tillväxt och differentiering av embryot under den tidigaste delen av graviditeten, för att fostret ska utvecklas normalt och få en fullgod syn.",
+        "summary": "A-vitamin behövs för att syn, hud och slemhinnor ska fungera normalt.",
+        "info": "A-vitamin har en grundläggande betydelse för utveckling, tillväxt och differentiering av embryot under den tidigaste delen av graviditeten, för att fostret ska utvecklas normalt och få en fullgod syn.",
         "sources": [
             "Preformerat A-vitamin (retinol och retinylestrar) som finns i animaliska livsmedel.",
             "Provitamin A i form av karotenoider som i huvudsak är växtbaserade och där betakaroten är den vanligaste karotenoiden."
