@@ -3,7 +3,7 @@
         <h1 class="display-4">{{name}}</h1>
         <p class="lead">{{summary}}</p>
         <hr class="my-4">
-        <p>{{info}}</p>
+        <p class="text-left">{{info}}</p>
         <hr class="my-4">
         <h3 class="text-left">Källor för denna vitamin:</h3>
         <p class="lead text-left">
