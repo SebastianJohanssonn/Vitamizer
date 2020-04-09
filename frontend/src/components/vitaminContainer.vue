@@ -1,65 +1,69 @@
 <template>
-    <div class="container">
+    <div v-if="currentVitamin">
+        <VitaminJumbotron
+            v-bind:id = "currentVitamin.id"
+            v-bind:name = "currentVitamin.name"
+            v-bind:info = "currentVitamin.info"
+            v-bind:sources = "currentVitamin.sources"
+            v-bind:summary = "currentVitamin.summary"
+            @close = "handleClose"
+        />
+    </div> 
+    <div v-else class="container">
         <VitaminCard v-for="(vitamin, index) in vitamins" :key="index"
             v-bind:id = "vitamin.id"
             v-bind:name = "vitamin.name"
-            v-bind:info = "vitamin.info"
-            v-bind:sources = "vitamin.sources"
             v-bind:summary = "vitamin.summary"
-            @idClicked = "handleClick"
+            @idClicked = "getOne"
         />
-    </div> 
+    </div>
 </template>
 
 <script>
 import VitaminCard from './vitaminCard.vue'
+import VitaminJumbotron from './vitaminJumbotron.vue'
 import axios from 'axios'
 
 export default {
     name: 'VitaminContainer',
     components: {
-        VitaminCard
+        VitaminCard,
+        VitaminJumbotron
     },
     data(){
         return{
             vitamins: undefined,
             isClicked: false,
-            currentVitamin: undefined,
-            currentVitaminId: undefined
+            currentVitamin: undefined
         }
     },
     created(){
         axios.get('http://localhost:80/Vitamizer/backend/API/read.php')
         .then(response => {
-        this.vitamins = response.data.JSON.content
+        this.vitamins = response.data
         })
         .catch(e =>{
         console.error(e)
         })
     },
     methods: {
-        getOne: function(){
-            axios.post('http://localhost:80/Vitamizer/backend/API/read.php', {
-                id: this.currentVitaminId
+        getOne: function(value){
+            axios.get('http://localhost:80/Vitamizer/backend/API/read.php', {
+                params: {
+                    id: value
+                }
             })
             .then(response => {
-                this.currentVitamin = response.data.JSON
+                this.currentVitamin = response.data
                 console.log(this.currentVitamin)
             }).catch(e => {
                 console.error(e)
             })
         },
-        handleClick: function(value){
-            this.currentVitaminId = value
-            console.log(value)
+        handleClose: function(){
+            this.currentVitamin = undefined
         }
 
   }
 }
 </script>
-
-<style>
-    .d-flex {
-        height: 100%!important;
-    }
-</style>
