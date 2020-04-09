@@ -3,7 +3,7 @@
             <div class="card-body">
                 <h5 class="card-title">{{name}}</h5>
                 <p class="card-text">{{summary}}</p>
-                <p class="card-text" v-on:click="readMore">Läs mer</p>
+                <p id="clickable" class="card-text" v-on:click="readMore">Läs mer</p>
             </div>
         </div>
 </template>
@@ -23,3 +23,9 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+    #clickable {
+        cursor: pointer;
+    }
+</style>
